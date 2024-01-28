@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad Libs&comma; But &quot;Chris, is that a weed&quot;</title>
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+  <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+ <body>
+  <div class="container">
+   <div class="jumbotron">
+    <header id="title">
+     <h1>Mad Libs&comma; But &quot;Chris, is that a weed&quot;</h1>
+     <p>Based off of that one vine</p>
+     <p>💁‍♂️🚬🖍👮‍♂️</p>
+    </header>
+   </div>
+   <main>
+    <section id="options">
+      <h3>Input here</h3>
+      <div class="row">
+       <div class="col-md-3">
+        <h5>Chris</h5>
+        <input type="text" name="name" id="name" placeholder="Chris"/>
+       </div>
+       <div class="col-md-3">
+        <h5>Weed</h5>
+        <input type="text" name="weed" id="weed" placeholder="weed" />
+       </div>
+       <div class="col-md-3">
+        <h5>Crayon</h5>
+        <input type="text" name="crayon" id="crayon" placeholder="Crayon" />
+       </div>
+       <div class="col-md-3">
+        <h5>Police</h5>
+        <input type="text" name="police" id="police" placeholder="police" />
+       </div>
+      </div>
+    </section>
+    <br>
+    <section>
+     <button py-click="make_mad_lib">Generate Mad lib</button>
+     <br>
+     <div id="output"></div>
+    </section>
+   </main>
+   <hr>
+   <aside>
+    <footer>
+     <p>&copy; All Rights Reserved.</p>
+    </footer>
+   </aside>
+  </div>
+  <script type="py" src="src/py/script.py"></script>
+ </body>
+</html>
